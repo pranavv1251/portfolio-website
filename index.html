@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>My first page</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/slick.css">
+	<link rel="stylesheet" type="text/css" href="CSS/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="CSS\main.css">
+</head>
+<body>
+	<div class="main-overlay js-main-overlay"></div>
+	<section class="cover-main" id="home">
+		<header>
+			<nav class="nav-wrapper">
+				<div class="logo">
+					<a href="#">
+						<img src="images\white-logo.png" class="logoi">
+					</a>
+				</div>
+				<ul class="menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#work">My Work</a></li>
+					<li><a href="#work">About</a></li>
+					<li><a href="#slider">Slider</a></li>
+					<li><a href="#footer">Footer</a></li>
+				</ul>		
+			</nav>
+			<div class="menu-trigger js-menu-trigger"></div>
+		</header>
+		<div class="wrapper">
+			<ul id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="15" data-scalar-y="15" data-friction-x="0.1" data-friction-y="0.1" data-origin-x="0.5" data-origin-y="0.5">
+				<li class="layer name" data-depth="1.1">&nbsp;NAme</li>
+				<li class="layer title" data-depth="0.7">Designation</li>
+			</ul>
+		</div>
+	</section>
+	<section class="masonary-grid" id="work">
+		<h2 class="sub-title">My Photography Portfolio</h2>
+		<div class="grid">
+			<div class="grid-item"><img src="images\one.jpg"></div>
+			<div class="grid-item"><img src="images\two.jpg"></div>
+			<div class="grid-item tall-img"><img src="images\tall-img-1.jpg"></div>
+			<div class="grid-item"><img src="images\four.jpg"></div>
+			<div class="grid-item tall-img"><img src="images\tall-img-2.jpg"></div>
+			<div class="grid-item"><img src="images\five.jpg"></div>
+			<div class="grid-item"><img src="images\six.jpg"></div>
+			<div class="grid-item"><img src="images\three.jpg"></div>
+			<div class="grid-item"><img src="images\seven.jpg"></div>
+			<div class="grid-item"><img src="images\eight.jpg"></div>
+			<div class="grid-item"><img src="images\nine.jpg"></div>
+			<div class="grid-item"><img src="images\ten.jpg"></div>
+			<div class="grid-item"><img src="images\eleven.jpg"></div>
+		</div>
+	</section>
+	<div class="slider-div" id="slider">
+		<h2 class="sub-title">Slider Showcase</h2>
+		<div class="slider">
+			<div class="slide">
+				<img src="images\eleven.jpg" class="img-resp">
+			</div>
+			<div class="slide">
+				<img src="images\ten.jpg" class="img-resp">
+			</div>
+			<div class="slide">
+				<img src="images\one.jpg" class="img-resp">
+			</div>
+			<div class="slide">
+				<img src="images\three.jpg" class="img-resp">
+			</div>
+			<div class="slide">
+				<img src="images\two.jpg" class="img-resp">
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<h1>Hello this is a parallax footer.</h1>	
+	</footer>
+	
+	<script type="text/javascript" src="E:\7 programs\JS\jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="E:\7 programs\JS\parallax.min.js"></script>
+	<script type="text/javascript" src="E:\7 programs\JS\masonry.js"></script>
+	<script type="text/javascript" src="E:\7 programs\JS\slick.min.js"></script>
+	<script src="E:\7 programs\JS\main.js"></script>
+	<script type="text/javascript">
+		var scene=document.getElementById('scene');
+		var parallax=new Parallax(scene);
+	</script>
+</body>
+</html>
